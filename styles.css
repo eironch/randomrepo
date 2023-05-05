@@ -1,0 +1,419 @@
+
+body {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing {
+    background-image: url('/assets/borderlines.jpg');
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.menuIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuIcon a{
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menuIcon:hover{
+    background-color: #08161f;
+}
+
+.menuIcon:hover .square{
+    background-color: #d2d2d3;
+}
+
+.square{
+    display: inline-block;
+    height: 3px;
+    border-radius: 10px;
+    width: 20px;
+    background-color: #08161f;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.squareInverted{
+    display: inline-block;
+    height: 3px;
+    border-radius: 2px;
+    width: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #d2d2d3
+}
+
+#pageTitle{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Raleway-Medium", tahoma;
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navItem {
+    font-family: "Raleway", tahoma;
+    margin-left: 10px;
+}
+
+.navItem a{
+    float: left;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #08161f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navItem a:hover{
+    background-color: #08161f;
+    color: #d2d2d3;
+}
+
+#socials{
+    position: fixed;
+    float: right;
+    left: 95%;
+    top: 84.5%;
+    transform: translateX(90%);
+    display: flex;
+    flex-direction: column;
+}
+.socialIcon{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.socialIcon:hover{
+    transform: scale(1.5);
+    transition: 0.2s ease-out;
+}
+
+#body{
+    margin-left: 25px;
+}
+
+#taglineContainer{
+    color: #08161f;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+#tagline1{
+    font-family: "Raleway-Bold", tahoma;
+    font-size: 50px;
+}
+
+#tagline2{
+    font-family: "Raleway-Black", tahoma;
+    font-size: 100px;
+}
+
+#introContainer{
+    width: 500px;
+    margin-left: 150px;
+    
+}
+
+.lineContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.lineBorder {
+    background-color: #08161f;
+    border-radius: 5px;
+    margin: 0px 5px;
+    transform: translateY(-50px);
+
+    width: 30px;
+    height: 10px;
+
+}
+#intro{
+    font-family: "Raleway-SemiBold", tahoma;
+    padding: 5px;
+    text-shadow: 2px 2px 3px #08161f;
+    transform: translateY(-20px);
+    letter-spacing: 1px;
+    color: #d2d2d3;
+}
+
+
+.bookBtn {
+    overflow: hidden;
+    font-family: "Raleway-Bold", tahoma;
+    background-color: #08161f;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    height: 100px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bookBtn span{
+    color: #d2d2d3;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.bookBtn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bookBtn:hover span{
+    padding-right: 25px;
+}
+
+.bookBtn:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.seoul {
+    background-image: url('/assets/seoul.jpg');
+    margin: 0px;
+    height: 110vh;
+}
+
+.bodySeoul{
+    display: grid;
+    margin-top: 30vh;
+    flex-direction: row;
+    align-items: center;
+    grid-template-areas: ".contentContainerLeft .contentContainerRight";
+    grid-template-columns: 1fr 1fr;
+    float: center;
+}
+
+.contentContainerRight {
+    margin-right: 17vh;
+    float: right;
+}
+
+.contentContainerLeft {
+    margin-left: 17vh;
+    float: left;
+}
+
+.contentContainerSeoul {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    float: right;
+}
+
+.cityNameSeoul {
+    font-family: "Raleway-Black", tahoma;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 150px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+.countryNameSeoul {
+    font-family: "Raleway-Bold", tahoma;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 50px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+#lineContainerSeoul {
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+.lineBorderSeoul {
+    background-color: #d2d2d3;
+}
+
+#introSeoul {
+    overflow: hidden;
+    font-family: "Raleway-SemiBold", tahoma;
+    padding: 5px;
+    width: 500px;
+    margin-left: 30px;
+    text-shadow: 2px 2px 3px #08161f;
+    transform: translateY(-20px);
+    letter-spacing: 1px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+.bali {
+    background-image: url('/assets/bali.jpg');
+    margin: 0px;
+    height: 110vh;
+}
+
+.bodyBali{
+    display: grid;
+    margin-top: 30vh;
+    align-items: center;
+    grid-template-areas: ".contentContainerLeft .contentContainerRight";
+    grid-template-columns: 1fr 1fr;
+    float: center;
+}
+
+.contentContainerBali {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.cityNameBali {
+    font-family: "Raleway-Black", tahoma;
+    padding: 10px;
+    font-size: 150px;
+    color: #d2d2d3;
+}
+
+.countryNameBali {
+    font-family: "Raleway-Bold", tahoma;
+    padding: 10px;
+    font-size: 50px;
+    color: #d2d2d3;
+}
+
+#lineContainerBali {
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+.lineBorderBali {
+    background-color: #d2d2d3;
+}
+
+#introBali {
+    overflow: hidden;
+    font-family: "Raleway-SemiBold", tahoma;
+    padding: 5px;
+    width: 500px;
+    margin-left: 15px;
+    text-shadow: 2px 2px 3px #08161f;
+    transform: translateY(-20px);
+    letter-spacing: 1px;
+    color: #d2d2d3;
+}
+
+
+.reykjavik {
+    background-image: url('/assets/reykjavik.jpg');
+    margin: 0px;
+    height: 110vh;
+}
+
+.bodyReykjavik{
+    display: grid;
+    margin-top: 30vh;
+    flex-direction: row;
+    align-items: center;
+    grid-template-areas: ".contentContainerLeft .contentContainerRight";
+    grid-template-columns: 1fr 1fr;
+    float: center;
+    overflow: hidden;
+}
+
+.contentContainerReykjavik {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    float: right;
+}
+
+.cityNameReykjavik {
+    font-family: "Raleway-Black", tahoma;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 150px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+.countryNameReykjavik {
+    font-family: "Raleway-Bold", tahoma;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 50px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+#lineContainerReykjavik {
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+.lineBorderReykjavik {
+    background-color: #d2d2d3;
+}
+
+#introReykjavik {
+    overflow: hidden;
+    font-family: "Raleway-SemiBold", tahoma;
+    padding: 5px;
+    width: 500px;
+    margin-left: 23vh;
+    text-shadow: 2px 2px 3px #08161f;
+    transform: translateY(-20px);
+    letter-spacing: 1px;
+    color: #d2d2d3;
+    text-align: right;
+}
+
+@media screen and (max-width: 1500px) {
+    .navItem a{display: none;}
+    .bookBtn{display: none;}
+}
+
+@media screen and (max-width: 1000px) {
+    #pageTitle{font-size: 20px;}
+}
