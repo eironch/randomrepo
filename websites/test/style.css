@@ -1,0 +1,30 @@
+h1{
+color: blue;
+}
+
+#form-container-hori {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#form-container-vert {
+display: flex;
+flex-direction: row;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.input-text{
+margin-right: 1ch;
+}
+
+div button {
+margin-top: 10px;
+}
